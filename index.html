@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="webpage/bootstrap.min.css"/>
+    <script language="javascript" src="webpage/jquery.min.js"></script>
+	<script language="javascript" src="webpage/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="webpage/cssReset.css"/>
+	<title>Mingming Guo 郭明明</title>
+	<meta name="description" content="Personal personal academic website for Mingming Guo at University of Chinese Academy of Sciences (UCAS).">
+	<meta name="keywords" content="Mingming Guo,UCAS">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://scholar.google.com/citations?user=zvkzYukAAAAJ&hl=en"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156016426-1');
+</script>
+
+</head>
+<body>
+<style type='text/css'>
+	body{
+		font-family:arial,"Microsoft YaHei",微软雅黑,宋体,Helvetica;
+		font-size:15px;
+	}
+	/*
+		div.content:
+			provide the content div in the middle
+	*/
+	body div.content{
+		/*width:1280px;*/
+		width:1000px;
+		margin:0 auto;
+		line-height:30px;
+	}
+	/*
+		header wrapper
+	*/
+	body div.header{
+		background-color:#2196F3;
+	}
+	body div.header > div.content{
+		padding:10px;
+	}
+	/*
+		footer1
+	*/
+	body div.footer1{
+		margin-top:40px;
+		background-color:#64B5F6;
+	}
+	/*
+		footer2
+	*/
+	body div.footer2{
+		background-color:#2196F3;
+	}
+	body div.footer > div.content{
+		padding:10px;
+	}
+	body div.footer1 > div.content{
+		padding:20px;
+		line-height:30px;
+		font-size:1.2em;
+	}
+	/*
+		utils css
+	*/
+	div.white-text{
+		color:white;
+	}
+	div.content > div.title{
+		padding:20px 0;
+		border-top:1px silver solid;
+		margin-top:30px;
+		font-size:2em;
+		font-weight:bold;
+	}
+	body a{
+		text-decoration:none;
+	}
+	div.content ul{
+		list-style: disc inside none;
+	}
+	div.content ol{
+		list-style: decimal inside none;
+	}
+	div.content li{
+		line-height:30px;
+		padding-bottom:5px;
+	}
+	div.content div.float-right{
+		float:right;
+	}
+</style>
+<!-- css for bio -->
+<style type="text/css">
+	/*
+		bio
+	*/
+	div.bio{
+		font-size:1.2em;
+	}
+	div.bio > div.left{
+		float:left;
+		width:280px;
+	}
+	div.bio > div.left > img.me{
+		max-height:230px;
+		margin:10px;
+		max-width:230px;
+		margin-top:20px;
+	}
+
+	div.bio > div.right{
+		margin:0 0 0 300px;
+		min-height:300px;
+	}
+	div.bio > div.right > div.line.name{
+		padding:15px 0;
+		line-height:40px;
+	}
+	div.bio > div.right > div.name > span.name,div.bio > div.right > div.name > span.chineseName{
+		font-size:2em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.name > span.chinesesName{
+		font-family:"Microsoft YaHei",微软雅黑,宋体,Helvetica,arial;
+	}
+	div.bio > div.right > div.name > span.misc{
+		font-size:1.5em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.line.school{
+		padding:5px 0;
+	}
+
+	div.bio > div.right > div.line.office{
+		padding:5px 0;
+	}
+
+</style>
+<!-- quick link and intro -->
+<style type="text/css">
+div.quickLink{
+	min-height:40px;
+}
+div.quickLink > .block{
+	display:block;
+	float:left;
+	padding:10px 0px;
+	text-align:center;
+	border:1px silver solid;
+	border-radius:5px;
+	box-shadow:2px 2px 1px silver;
+	width:140px;
+	margin-right:50px;
+	margin-top:20px;
+	cursor:pointer;
+}
+</style>
+<!-- research and education -->
+<style type="text/css">
+div.research > ul > li > span.title,div.research > ul > li > div.time,
+div.education > ul > li > span.title,div.education > ul > li > div.time,
+div.pro > ul > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.research > ul > li > div.info,
+div.education > ul > li > div.info,
+div.pro > ul > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+</style>
+<!-- publications -->
+<style type="text/css">
+div.publications > ol > li{
+	padding-bottom: 30px;
+}
+div.publications > ol > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.publications > ol > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+div.publications div.imgblock{
+	float:left;
+	height:160px;
+	width:300px;
+	padding:10px;
+	text-align: center;
+}
+div.publications div.imgblock > img{
+	max-width:100%;
+	max-height:100%;
+}
+img.press{
+	height:20px;
+}
+</style>
+<div class="header">
+	<div class="content white-text">
+		Welcome to Mingming Guo's Personal Academic Websites, you are <span><script type=text/javascript src=data/cnt.php></script></span>th visitor.
+	</div>
+</div>
+
+
+<div class="content bio">
+	<!-- bio -->
+	<div class="left">
+	<img class='me'  src="resources/me.jpeg"> </img>
+		</a>
+	</div>
+	<div class="right">
+		<div class="line name">
+			<span class="name" ><a href="/">Mingming Guo</a></span>
+			<span class="misc"> </span> &nbsp; &nbsp; &nbsp;
+			<span class="chineseName">郭明明</span>
+		</div>
+		<div class="line school">
+			Chemical Engineering
+		</div>
+		<div class="line school">
+			School of Chemical Sciences
+		</div>
+		<div class="line school">
+			University of Chinese Academy of Sciences (中国科学院大学)，UCAS
+		</div>
+		<div class="line school">
+			<a href="https://scholar.google.com/citations?user=zvkzYukAAAAJ&hl=en" >Google Schloar</a>　　　　　<a href="https://github.com/MingmingGuo" >Github</a>　　　　　<a href="https://publons.com/researcher/3543699/mingming-guo/publications/" >Publons</a>              
+		</div>
+		<br/>
+		<div class="line office">
+			Address: 19A Yuquanlu, Beijing, 100049, China
+		</div>
+		<div class="line office">
+			Email: guomingming19@mails.ucas.edu.cn
+		</div>
+		<span class="title">Proverb: <i>Opportunities are for those who are prepared. </i> </span>
+	</div>
+</div>
+
+<div class="content quickLink">
+     <span class="block"><a href="/About.html" >About me</a></span>
+	<span class="block"><a href="/Publication.html" >Publications</a></span>
+	<span class="block"><a href="/Experience.html" >Experience </a></span>
+	<span class="block"><a href="/Awards.html" >Awards</a></span>
+	<span class="block"><a href="/New.html" >News</a></span>
+</div>
+
+<style type='text/css'>
+	body{
+		font-family:arial,"Microsoft YaHei",微软雅黑,宋体,Helvetica;
+		font-size:15px;
+	}
+	/*
+		div.content:
+			provide the content div in the middle
+	*/
+	body div.content{
+		/*width:1280px;*/
+		width:1000px;
+		margin:0 auto;
+		line-height:30px;
+	}
+	/*
+		header wrapper
+	*/
+	body div.header{
+		background-color:#2196F3;
+	}
+	body div.header > div.content{
+		padding:10px;
+	}
+	/*
+		footer1
+	*/
+	body div.footer1{
+		margin-top:30px;
+		background-color:#64B5F6;
+	}
+	/*
+		footer2
+	*/
+	body div.footer2{
+		background-color:#2196F3;
+	}
+	body div.footer > div.content{
+		padding:10px;
+	}
+	body div.footer1 > div.content{
+		padding:20px;
+		line-height:40px;
+		font-size:1.2em;
+	}
+	/*
+		utils css
+	*/
+	div.white-text{
+		color:white;
+	}
+	div.content > div.title{
+		padding:20px 0;
+		border-top:1px silver solid;
+		margin-top:30px;
+		font-size:2em;
+		font-weight:bold;
+	}
+	body a{
+		text-decoration:none;
+	}
+	div.content ul{
+		list-style: disc inside none;
+	}
+	div.content ol{
+		list-style: decimal inside none;
+	}
+	div.content li{
+		line-height:30px;
+		padding-bottom:5px;
+	}
+	div.content div.float-right{
+		float:right;
+	}
+</style>
+<!-- css for bio -->
+<style type="text/css">
+	/*
+		bio
+	*/
+	div.bio{
+		font-size:1.2em;
+	}
+	div.bio > div.left{
+		float:left;
+		width:280px;
+	}
+	div.bio > div.left > img.me{
+		max-height:250px;
+		margin:10px;
+		max-width:230px;
+		margin-top:20px;
+	}
+
+	div.bio > div.right{
+		margin:0 0 0 300px;
+		min-height:300px;
+	}
+	div.bio > div.right > div.line.name{
+		padding:15px 0;
+		line-height:40px;
+	}
+	div.bio > div.right > div.name > span.name,div.bio > div.right > div.name > span.chineseName{
+		font-size:2em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.name > span.chinesesName{
+		font-family:"Microsoft YaHei",微软雅黑,宋体,Helvetica,arial;
+	}
+	div.bio > div.right > div.name > span.misc{
+		font-size:1.5em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.line.school{
+		padding:5px 0;
+	}
+
+	div.bio > div.right > div.line.office{
+		padding:5px 0;
+	}
+
+</style>
+<!-- quick link and intro -->
+<style type="text/css">
+div.quickLink{
+	min-height:70px;
+}
+div.quickLink > .block{
+	display:block;
+	float:left;
+	padding:10px 0px;
+	text-align:center;
+	border:1px silver solid;
+	border-radius:5px;
+	box-shadow:2px 2px 1px silver;
+	width:140px;
+	margin-right:50px;
+	margin-top:20px;
+	cursor:pointer;
+}
+</style>
+<!-- research and education -->
+<style type="text/css">
+div.research > ul > li > span.title,div.research > ul > li > div.time,
+div.education > ul > li > span.title,div.education > ul > li > div.time,
+div.pro > ul > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.research > ul > li > div.info,
+div.education > ul > li > div.info,
+div.pro > ul > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+</style>
+<!-- publications -->
+<style type="text/css">
+div.publications > ol > li{
+	padding-bottom: 30px;
+}
+div.publications > ol > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.publications > ol > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+div.publications div.imgblock{
+	float:left;
+	height:160px;
+	width:300px;
+	padding:10px;
+	text-align: center;
+}
+div.publications div.imgblock > img{
+	max-width:100%;
+	max-height:100%;
+}
+img.press{
+	height:20px;
+}
+</style>
+
+<div class="content honors" name='honors'>
+	<a name="honors"></a>
+	<div class="title">Welcome!</div>
+	<ul>
+		<li>I’m a Research Assistant at University of Chinese Academy of Sciences interested in computational materials science,  
+		molecular dynamics simulation, first-principles and machine learning to materials science. </li>
+		<li> I am looking for a Ph.D. candidate position. </li>
+		<li> I am particularly excited about high-throughput computational screening approaches and advances in machine learning to accelerate the materials discovery process.</li>
+		<li> As interdisciplinary science, computational material need many researchers from diverse domains, I will pursue the combination of theory and experiment to solve scientific problems.</li>
+        <li> If you’re reading this, I’d be thrilled to meet you. </li>
+		<!--
+		<li>CVPR, CES, IJCAI, ICASSP, NIST PSCR, NIST TRECVID student travel grants <div class="float-right">2016-2020</div></li>
+		<li>Best Undergraduate Thesis (Top 5%) <div class="float-right">2015</div></li>
+		<li>Second Prize, the National Undergraduates Computer Design Competition of China <div class="float-right">2014</div></li>
+		<li>National Prize (Top 10%), National Undergraduates Innovation Project <div class="float-right">2013</div></li>
+	-->
+	</ul>
+</div>
+
+
+<div class="footer footer1">
+	<div  class="content white-text">
+		Chemical Engineering <br/>
+		School of Chemistry Sciences <br/>
+		University of Chinese Academy of Sciences
+	</div>
+<div class="footer footer2">
+	<div class="content white-text">
+		Created and designed by <a style="color:white" href="http://www.guomm.top">Mingming Guo</a> in UCAS.<br/>
+		Last modified: Sun. Oct. 17, 2021.<br/>
+<!--    <div style="display:inline-block;width:200px;"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5scvn65wwx1&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;br=1&amp;sx=0&amp;ds=20" async="async"></script></div>
+-->	
+	<a href='https://clustrmaps.com/site/1bnnw'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=280&t=tt&d=uYo0pdODi6eZQHcckcge2ttINeHkNhQjJc2y-g07QlE&co=2d78ad&ct=ffffff'/></a>
+	</div>
+</div>
+
+<!--
+	a Junwei Liang's production
+	contact: junweil@cs.cmu.edu
+-->
+</body>
+</html>
